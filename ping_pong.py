@@ -34,5 +34,5 @@ finally:
     ping_pong()
 
 
-if __name__ == "__main":
+if __name__ == "__main__":
     ping_pong()
