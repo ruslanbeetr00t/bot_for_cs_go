@@ -10,8 +10,6 @@ def read_info_about_my_inventory():
         return read_my_inventory
 
 
-
-
 def add_my_inventory_on_market():
     id_my_inventory = []
     my_inventory = read_info_about_my_inventory()
@@ -39,5 +37,7 @@ def write_my_skin_inventory_id():
     with open('skin_full_info.json', 'w', encoding='utf-8') as file_json:
         json.dump(write_id, file_json, ensure_ascii=False, indent=4)
 
-
-write_my_skin_inventory_id()
+        
+if __name__ == '__main__':
+    write_my_skin_inventory_id()
+    print('Skins "item_id":- write')
