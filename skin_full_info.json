@@ -1,0 +1,26 @@
+[
+    {
+        "id": "321",
+        "classid": "654",
+        "instanceid": "987",
+        "market_hash_name": "name_item_one",
+        "market_price": 103.476,
+        "tradable": 1,
+        "item_id": "30...74",
+        "min_price": 175,
+        "max_price": 189,
+        "on_market": 1
+    },
+    {
+        "id": "123",
+        "classid": "456",
+        "instanceid": "789",
+        "market_hash_name": "name_item_two",
+        "market_price": 0,
+        "tradable": 1,
+        "item_id": "30...74",
+        "min_price": 21.5,
+        "max_price": 29,
+        "on_market": 1
+    }
+]
