@@ -1,0 +1,8 @@
+get_money = 'https:...'
+go_offline = 'https:...'
+update_inventory = 'https:...'
+remove_all_from_sale = 'https:...'
+test = 'https:...'
+get_my_steam_id = 'https:...'
+url_ping_pong = 'https:...'
+search_item_by_hash_name_specific = 'https:...'
