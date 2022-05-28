@@ -16,7 +16,7 @@ def refresh_item_status():
                 if status_item_info["status"] == "2":
                     print(f'SOLD!!!\nThis item user:- {status_item_info}')
                 elif status_item_info["status"] == "4":
-                    print(f'GET!!!\nThis item:-{status_item_info}')
+                    print(f'GET!!!\nThis item "buy":-{status_item_info}')
                 elif status_item_info["status"] == "3":
                     print(f'WAIT!!\nMaybe buy this item:- {status_item_info}')
                 else:
