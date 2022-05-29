@@ -1,0 +1,27 @@
+import asyncio
+
+from aiogram import Bot, types
+from aiogram.dispatcher import Dispatcher
+from aiogram.utils import executor
+from setting import API, user_agent
+from endopoint import items_url
+from setings import TOKEN
+import requests
+import asyncio
+
+bot = Bot(token=TOKEN)
+dp = Dispatcher(bot)
+
+
+@dp.message_handler(commands=['start'])
+async def process_start_command(message: types.Message):
+    while True:
+        await asyncio.sleep(10)
+        payload = {'key': API}
+        response = requests.get(url=items_url, headers=user_agent, params=payload, timeout=2)
+        if response.status_code == 200:
+            await message.answer(response.json())
+
+
+if __name__ == '__main__':
+    executor.start
