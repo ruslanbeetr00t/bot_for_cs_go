@@ -6,16 +6,23 @@ from endopoint import items_url
 from telegram_token import TOKEN
 import requests
 import asyncio
+from keyboards import *
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
+
+
+@dp.message_handler(commands=['start'])
+async def start_program(message: types.Message):
+    await message.answer(f'Program work', reply_markup=buttons)
+
 
 """ status = 2 — Вы продали вещь и должны ее передать боту.
     status = 3 — Ожидание передачи боту купленной вами вещи от продавца.
     status = 4 — Вы можете забрать купленную вещь."""
 
 
-@dp.message_handler(commands=['start'])
+@dp.message_handler(commands=['status_item'])
 async def status_my_sell_buy_item(message: types.Message):
     while True:
         try:
